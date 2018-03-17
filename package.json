@@ -1,0 +1,25 @@
+{
+  "name": "zadanie_21_6",
+  "version": "1.0.0",
+  "description": "Moongose",
+  "main": "server.js",
+  "dependencies": {
+    "mongoose": "^5.0.10"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/PanZdan/zadanie_21_6.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/PanZdan/zadanie_21_6/issues"
+  },
+  "homepage": "https://github.com/PanZdan/zadanie_21_6#readme"
+}
