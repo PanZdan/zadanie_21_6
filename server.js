@@ -72,6 +72,17 @@ mark.manify(function(err, name) {
   console.log('Twoje nowe imię to: ' + name);
 });
 
+const konrad = new User({
+  name: 'Konrad',
+  username: 'Konrad_the_boy',
+  password: 'password'
+});
+
+konrad.manify(function(err, name) {
+  if (err) throw err;
+  console.log('Twoje nowe imię to: ' + name);
+});
+
 const findAllUsers = function() {
     // find all users
   return User.find({}, function(err, res) {
@@ -143,16 +154,7 @@ const findBennyAndRemove = function() {
     });
 }
 
-const konrad = new User({
-  name: 'Konrad',
-  username: 'Konrad_the_boy',
-  password: 'password'
-});
 
-konrad.manify(function(err, name) {
-  if (err) throw err;
-  console.log('Twoje nowe imię to: ' + name);
-});
 
 Promise.all([kenny.save(), mark.save(), benny.save() konrad.save()])
   .then(findAllUsers)
