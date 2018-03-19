@@ -50,7 +50,7 @@ kenny.manify(function(err, name) {
   console.log('Twoje nowe imię to: ' + name);
 });
 
-const benny1 = new User({
+const benny = new User({
   name: 'Benny',
   username: 'Benny_the_boy',
   password: 'password'
@@ -62,7 +62,7 @@ benny.manify(function(err, name) {
 });
 
 const mark = new User({
-  name: 'Mark',
+  name: 'Mark123',
   username: 'Mark_the_boy',
   password: 'password'
 });
