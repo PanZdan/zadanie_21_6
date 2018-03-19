@@ -143,7 +143,18 @@ const findBennyAndRemove = function() {
     });
 }
 
-Promise.all([kenny.save(), mark.save(), benny.save()])
+const konrad = new User({
+  name: 'Konrad',
+  username: 'Konrad_the_boy',
+  password: 'password'
+});
+
+konrad.manify(function(err, name) {
+  if (err) throw err;
+  console.log('Twoje nowe imię to: ' + name);
+});
+
+Promise.all([kenny.save(), mark.save(), benny.save() konrad.save()])
   .then(findAllUsers)
   .then(findSpecificRecord)
   .then(updadeUserPassword)
